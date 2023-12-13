@@ -1,0 +1,54 @@
+:root {
+  --primary: #eeeeee;
+  --font: "Fira Sans", sans-serif;
+  --dark: #d05252;
+}
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--font);
+}
+
+body {
+  background: linear-gradient(256.47deg, #5e2ab3 2.64%, #161e6c 140.46%);
+}
+/* ** media queries for setting width of 'toDo' between 950px and 430px display ** */
+
+@media only screen and (max-width: 950px) and (min-width: 430px) {
+  .container.done .toDo .top {
+    width: 23vw;
+  }
+  .container.onGoing .toDo .top {
+    width: 18.5vw;
+    margin-left: 1vw;
+  }
+  .container.onGoing .toDo .bottom {
+    width: 18.5vw;
+    margin-left: 1vw;
+  }
+  .container.dropped .toDo .top {
+    width: 19vw;
+    margin-left: 1vw;
+  }
+  .container.dropped .toDo .bottom {
+    margin-left: 1vw;
+  }
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.quotes {
+  position: relative;
+}
+button {
+  margin-bottom: 20vh;
+  background-color: #e8d3d3;
+  border-radius: 2vh;
+  padding: 10px;
+  font-family: var(--font);
+}
